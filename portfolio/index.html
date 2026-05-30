@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alex Rahman — Web Developer</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav__logo">AR</a>
+    <ul class="nav__links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="nav__toggle" id="navToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero__content">
+      <p class="hero__tag">Available for hire</p>
+      <h1 class="hero__title">
+        Hi, I'm <em>Alex</em><br />a Web Developer
+      </h1>
+      <p class="hero__sub">
+        I build fast, accessible, and thoughtfully designed websites.<br />
+        Turning ideas into clean, working code.
+      </p>
+      <div class="hero__cta">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+    </div>
+    <div class="hero__visual">
+      <div class="hero__blob"></div>
+      <div class="hero__card">
+        <div class="code-block">
+          <span class="code-line"><span class="kw">const</span> developer = {</span>
+          <span class="code-line indent"><span class="key">name</span>: <span class="str">"Alex Rahman"</span>,</span>
+          <span class="code-line indent"><span class="key">role</span>: <span class="str">"Web Developer"</span>,</span>
+          <span class="code-line indent"><span class="key">loves</span>: [<span class="str">"HTML"</span>, <span class="str">"CSS"</span>, <span class="str">"JS"</span>],</span>
+          <span class="code-line indent"><span class="key">available</span>: <span class="bool">true</span></span>
+          <span class="code-line">};</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="about__grid">
+        <div class="about__text">
+          <span class="section-label">About me</span>
+          <h2 class="section-title">Crafting the web, one line at a time</h2>
+          <p>I'm a passionate web developer who loves turning design concepts into clean, interactive experiences. I focus on writing semantic HTML, maintainable CSS, and vanilla JavaScript that actually works.</p>
+          <p>When I'm not coding, I'm exploring new web APIs, reading documentation, and contributing to open source.</p>
+          <a href="#contact" class="btn btn--primary" style="margin-top:1.5rem">Let's work together</a>
+        </div>
+        <div class="about__stats">
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="12">0</span>
+            <span class="stat-card__label">Projects built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="3">0</span>
+            <span class="stat-card__label">Years of learning</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="100">0</span>
+            <span class="stat-card__label">Cups of coffee ☕</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-card__num" data-target="5">0</span>
+            <span class="stat-card__label">Happy clients</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <span class="section-label">My work</span>
+      <h2 class="section-title">Featured projects</h2>
+      <div class="projects__filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="api">API</button>
+      </div>
+      <div class="projects__grid" id="projectsGrid">
+
+        <article class="project-card" data-category="html-css">
+          <div class="project-card__img" style="background:#e8f4fd;">
+            <div class="project-card__icon">🎨</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">HTML</span><span class="tag">CSS</span>
+            </div>
+            <h3>Creative Agency Landing Page</h3>
+            <p>A fully responsive landing page with smooth scroll, sticky nav, and CSS animations. Built entirely without frameworks.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <div class="project-card__img" style="background:#fdf3e8;">
+            <div class="project-card__icon">✅</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">LocalStorage</span>
+            </div>
+            <h3>Task Manager App</h3>
+            <p>A drag-and-drop task manager with local storage persistence, categories, and due date tracking.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="api">
+          <div class="project-card__img" style="background:#edf8f0;">
+            <div class="project-card__icon">🌤️</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">REST API</span>
+            </div>
+            <h3>Weather Dashboard</h3>
+            <p>Real-time weather app using the OpenWeather API. Features 5-day forecasts, geolocation, and unit toggling.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="javascript">
+          <div class="project-card__img" style="background:#f5edf8;">
+            <div class="project-card__icon">🎮</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">Canvas</span>
+            </div>
+            <h3>Snake Game</h3>
+            <p>Classic Snake game built with vanilla JS and the HTML Canvas API. Features high score tracking and speed levels.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="html-css">
+          <div class="project-card__img" style="background:#fdedf2;">
+            <div class="project-card__icon">🛒</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">HTML</span><span class="tag">CSS Grid</span>
+            </div>
+            <h3>E-commerce Product Page</h3>
+            <p>Pixel-perfect product page with image gallery, size selector, and a cart using CSS variables and Grid layout.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card" data-category="api">
+          <div class="project-card__img" style="background:#edf2fd;">
+            <div class="project-card__icon">📚</div>
+          </div>
+          <div class="project-card__body">
+            <div class="project-card__tags">
+              <span class="tag">JavaScript</span><span class="tag">API</span><span class="tag">CSS</span>
+            </div>
+            <h3>Book Finder App</h3>
+            <p>Search millions of books via the Open Library API. Includes favoriting, filtering by genre, and reading lists.</p>
+            <div class="project-card__links">
+              <a href="#" class="btn btn--sm">Live demo ↗</a>
+              <a href="https://github.com" class="btn btn--sm btn--ghost">GitHub</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="skills section" id="skills">
+    <div class="container">
+      <span class="section-label">What I know</span>
+      <h2 class="section-title">Skills & tools</h2>
+      <div class="skills__grid">
+        <div class="skill-group">
+          <h3>Frontend</h3>
+          <div class="skill-item">
+            <span>HTML5 / Semantic markup</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="95"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>CSS3 / Flexbox / Grid</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="90"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>JavaScript (ES6+)</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="80"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Responsive Design</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="92"></div></div>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h3>Tools & concepts</h3>
+          <div class="skill-item">
+            <span>Git & GitHub</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="85"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>REST APIs / Fetch</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="78"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Accessibility (a11y)</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="75"></div></div>
+          </div>
+          <div class="skill-item">
+            <span>Performance optimization</span>
+            <div class="skill-bar"><div class="skill-bar__fill" data-width="70"></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="tools-row">
+        <span class="tool-badge">VS Code</span>
+        <span class="tool-badge">Git</span>
+        <span class="tool-badge">Figma</span>
+        <span class="tool-badge">Chrome DevTools</span>
+        <span class="tool-badge">npm</span>
+        <span class="tool-badge">Netlify</span>
+        <span class="tool-badge">Vercel</span>
+        <span class="tool-badge">GitHub Pages</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <span class="section-label">Say hello</span>
+      <h2 class="section-title">Get in touch</h2>
+      <div class="contact__grid">
+        <div class="contact__info">
+          <p>I'm currently open to freelance projects and full-time opportunities. Drop me a message and I'll get back to you within 24 hours.</p>
+          <ul class="contact__list">
+            <li>📧 <a href="mailto:alex@example.com">alex@example.com</a></li>
+            <li>💼 <a href="https://linkedin.com" target="_blank">linkedin.com/in/alexrahman</a></li>
+            <li>🐙 <a href="https://github.com" target="_blank">github.com/alexrahman</a></li>
+          </ul>
+        </div>
+        <form class="contact__form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" placeholder="Alex Smith" required />
+            <span class="form-error" id="nameError"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+            <span class="form-error" id="emailError"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            <span class="form-error" id="messageError"></span>
+          </div>
+          <button type="submit" class="btn btn--primary btn--full">Send message</button>
+          <div class="form-success" id="formSuccess">✅ Message sent! I'll be in touch soon.</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed & built by <strong>Alex Rahman</strong> · <span id="year"></span></p>
+      <p>HTML · CSS · JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
